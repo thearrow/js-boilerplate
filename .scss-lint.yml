@@ -1,0 +1,9 @@
+linters:
+  ColorVariable:
+    enabled: false
+
+  ImportantRule:
+    enabled: false
+
+  VendorPrefix:
+    enabled: false
