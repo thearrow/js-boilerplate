@@ -1,13 +1,15 @@
 ## JS Boilerplate
 
-- Webpack
-- ES6 (Babel)
-- React
-- Redux
-- ESLint
-- SASS
+- [Webpack](https://webpack.github.io/)
+- [ES6 (Babel)](https://babeljs.io/)
+- [React](https://facebook.github.io/react/)
+- [Redux](http://redux.js.org/)
+- [ESLint](http://eslint.org/)
+- [SASS](http://sass-lang.com/)
 
 #### Getting Started
+
+Install [NodeJS](https://nodejs.org/en/download/)
 
 > (Optional) Install [Chrome React Devtools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)
 
@@ -16,10 +18,11 @@
 ```bash
 git clone git@github.com:thearrow/js-boilerplate.git {project-name}
 cd {project-name}
+rm -rf .git
 npm i
 npm start
 ```
-{Edit to fit your needs}
+> Edit to fit your needs
 
 
 #### Deployment
@@ -28,4 +31,4 @@ npm start
 cd {project-name}
 npm run build
 ```
-{Look in `deploy/`}
+> Look in `deploy/`
