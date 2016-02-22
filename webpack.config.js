@@ -7,6 +7,7 @@ module.exports = {
   output: {
     path: __dirname,
     filename: 'bundle.js',
+    publicPath: "http://0.0.0.0:8000/",
   },
 
   devtool: 'cheap-module-eval-source-map',
