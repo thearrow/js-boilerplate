@@ -20,3 +20,12 @@ npm i
 npm start
 ```
 {Edit to fit your needs}
+
+
+#### Deployment
+
+```bash
+cd {project-name}
+npm run build
+```
+{Look in `deploy/`}
