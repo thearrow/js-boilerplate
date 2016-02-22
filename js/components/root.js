@@ -14,8 +14,14 @@ class Root extends React.Component {
   }
 
   render () {
+    let {
+      dispatch,
+    } = this.props
+
     return (
-      <div className='root'>
+      <div
+        className='root'
+        onClick={name => dispatch(action())}>
         <p>Hello App</p>
       </div>
     )
