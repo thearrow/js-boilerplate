@@ -10,7 +10,7 @@ module.exports = {
     publicPath: "http://0.0.0.0:8000/",
   },
 
-  devtool: 'cheap-module-eval-source-map',
+  devtool: 'cheap-module-inline-source-map',
 
   plugins: [
     new HtmlWebpackPlugin({
@@ -23,8 +23,23 @@ module.exports = {
     loaders: [
       {
         test: /\.js$/,
-        loaders: ['babel'],
+        loader: 'babel',
         exclude: [/node_modules/],
+        query: {
+          presets: ['react', 'es2015', 'stage-0'],
+          plugins: [
+            ['react-transform', {
+              transforms: [{
+                transform: 'react-transform-hmr',
+                imports: ['react'],
+                locals: ['module']
+              }, {
+                transform: 'react-transform-catch-errors',
+                imports: ['react', 'redbox-react']
+              }]
+            }]
+          ]
+        }
       },
       {
         test: /\.scss$/,

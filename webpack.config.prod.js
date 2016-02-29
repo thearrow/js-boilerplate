@@ -55,7 +55,9 @@ module.exports = {
         query: {
           cacheDirectory: true,
           comments: false,
+          presets: ['react', 'es2015', 'stage-0'],
           plugins: [
+            'transform-react-remove-prop-types',
             'transform-react-inline-elements',
             'transform-react-constant-elements',
           ]
