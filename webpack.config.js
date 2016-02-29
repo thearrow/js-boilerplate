@@ -22,9 +22,9 @@ module.exports = {
   module: {
     loaders: [
       {
-        test: /\.js$/,
+        test: /\.(js|jsx)$/,
         loader: 'babel',
-        exclude: [/node_modules/],
+        exclude: /node_modules/,
         query: {
           presets: ['react', 'es2015', 'stage-0'],
           plugins: [
