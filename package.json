@@ -4,7 +4,7 @@
   "author": "",
   "description": "",
   "keywords": [],
-  "license": "license",
+  "license": "UNLICENSED",
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -38,6 +38,7 @@
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.8.5",
     "html-webpack-plugin": "^2.8.1",
+    "json-loader": "^0.5.4",
     "node-sass": "^3.4.2",
     "react-addons-perf": "^0.14.6",
     "react-transform-hmr": "^1.0.1",

@@ -15,8 +15,8 @@ module.exports = {
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': '"production"'
     }),
-    new webpack.optimize.DedupePlugin(),
     new webpack.optimize.OccurenceOrderPlugin(),
+    new webpack.optimize.DedupePlugin(),
     new webpack.optimize.UglifyJsPlugin({
       comments: '',
       compress: {
@@ -40,6 +40,9 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: 'template.html',
       inject: 'body',
+      minify: {
+        collapseWhitespace: true
+      }
     }),
   ],
 
@@ -48,7 +51,7 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'babel',
-        exclude: 'node_modules',
+        exclude: [/node_modules/],
         query: {
           cacheDirectory: true,
           comments: false,
@@ -65,6 +68,10 @@ module.exports = {
       {
         test: /\.(woff|woff2|ttf|eot|svg|jpg|png)$/,
         loader: 'file',
+      },
+      {
+        test: /\.json$/,
+        loader: 'json',
       },
     ],
   },
