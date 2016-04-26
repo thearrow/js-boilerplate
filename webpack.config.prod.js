@@ -68,7 +68,7 @@ module.exports = {
         loader: ExtractTextPlugin.extract('style', 'css!sass'),
       },
       {
-        test: /\.(woff|woff2|ttf|eot|svg|jpg|png)$/,
+        test: /\.(woff|woff2|ttf|otf|eot|svg|jpg|png|gif)$/,
         loader: 'file',
       },
       {

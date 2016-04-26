@@ -46,7 +46,7 @@ module.exports = {
         loaders: ['style', 'css?sourceMap', 'sass?sourceMap'],
       },
       {
-        test: /\.(woff|woff2|ttf|eot|svg|jpg|png)$/,
+        test: /\.(woff|woff2|ttf|otf|eot|svg|jpg|png|gif)$/,
         loader: 'file',
       },
       {
