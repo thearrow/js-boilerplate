@@ -4,7 +4,16 @@ var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-  entry: './js/app.js',
+  entry: {
+    app: "./js/app.js",
+    vendor: [
+      "react",
+      "react-dom",
+      "redux",
+      "react-redux",
+      "react-helmet",
+    ],
+  },
 
   output: {
     path: 'deploy',
@@ -15,6 +24,7 @@ module.exports = {
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': '"production"'
     }),
+    new webpack.optimize.CommonsChunkPlugin("vendor", "vendor.js"),
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.optimize.DedupePlugin(),
     new webpack.optimize.UglifyJsPlugin({
