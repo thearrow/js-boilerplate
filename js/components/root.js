@@ -13,15 +13,15 @@ class Root extends React.Component {
     console.log('Initialize App Here!')
   }
 
-  render () {
-    let {
-      dispatch,
-    } = this.props
+  handleClick = () => {
+    this.props.dispatch(action())
+  }
 
+  render () {
     return (
       <div
         className='root'
-        onClick={name => dispatch(action())}>
+        onClick={this.handleClick}>
         <p>Hello App</p>
       </div>
     )

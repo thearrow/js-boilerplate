@@ -3,7 +3,8 @@
   "extends": "standard",
   "plugins": [
     "babel",
-    "react"
+    "react",
+    "import"
   ],
   "env": {
     "browser": true,
@@ -33,8 +34,13 @@
     "babel/arrow-parens": [1, "as-needed"],
     "babel/no-await-in-loop": 1,
     "react/jsx-uses-react": 2,
-    "react/jsx-uses-vars": 2,
-    "react/jsx-no-bind": 2,
+    "react/jsx-uses-vars": 1,
+    "react/jsx-no-bind": 1,
     "react/react-in-jsx-scope": 2,
+    "import/no-unresolved": 2,
+    "import/named": 2,
+    "import/default": 2,
+    "import/imports-first": 1,
+    "import/no-duplicates": 1,
   }
 }
