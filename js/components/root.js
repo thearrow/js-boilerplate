@@ -1,5 +1,6 @@
 import '../../scss/root.scss'
 import React from 'react'
+import Helmet from 'react-helmet'
 import { connect } from 'react-redux'
 import { action } from '../actions/actions'
 
@@ -22,6 +23,12 @@ class Root extends React.Component {
       <div
         className='root'
         onClick={this.handleClick}>
+        <Helmet
+          title='App Title Here'
+          meta={[
+            { 'charset': 'utf-8' },
+            { 'name': 'viewport', 'content': 'width=device-width, initial-scale=1' },
+          ]}/>
         <p>Hello App</p>
       </div>
     )
