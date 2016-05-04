@@ -1,11 +1,16 @@
 ## JS Boilerplate
 
-- [Webpack](https://webpack.github.io/)
-- [ES6 (Babel)](https://babeljs.io/)
-- [React](https://facebook.github.io/react/)
-- [Redux](http://redux.js.org/)
-- [ESLint](http://eslint.org/)
-- [SASS](http://sass-lang.com/)
+- [Webpack](https://webpack.github.io/) (Module Bundler)
+- [Babel](https://babeljs.io/) (ES6/7+ Transpilation)
+- [React](https://facebook.github.io/react/) (View Components)
+- [Redux](http://redux.js.org/) (State Management)
+- [React-Helmet](https://github.com/nfl/react-helmet) (\<head\> Management)
+- [Karma](https://karma-runner.github.io/) (Test Runner)
+- [Mocha](https://mochajs.org/) (Test Framework)
+- [Chai](http://chaijs.com/) (Test Assertions)
+- [Sinon](http://sinonjs.org/) (Test Spies/Stubs)
+- [ESLint](http://eslint.org/) (JS Linting)
+- [SASS](http://sass-lang.com/) (CSS Preprocessor)
 
 #### Getting Started
 
@@ -23,6 +28,13 @@ npm i
 npm start
 ```
 > Edit to fit your needs
+
+
+#### Testing
+```bash
+cd {project-name}
+npm run test
+```
 
 
 #### Deployment
