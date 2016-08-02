@@ -5,7 +5,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   entry: {
-    app: "./js/app.js",
+    app: "./src/index.js",
     vendor: [
       "react",
       "react-dom",
@@ -16,7 +16,7 @@ module.exports = {
   },
 
   output: {
-    path: 'deploy',
+    path: 'dist',
     filename: 'app.js',
   },
 

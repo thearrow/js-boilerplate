@@ -13,11 +13,11 @@ module.exports = function (config) {
 
     files: [
       './node_modules/phantomjs-polyfill/bind-polyfill.js',
-      './js/tests/all.js'
+      './src/tests/all.js'
     ],
 
     preprocessors: {
-      './js/tests/all.js': [ 'webpack', 'sourcemap' ]
+      './src/tests/all.js': [ 'webpack', 'sourcemap' ]
     },
 
     reporters: [ 'mocha' ],
@@ -40,7 +40,7 @@ module.exports = function (config) {
       },
       resolve: {
         modulesDirectories: [
-          'js',
+          'src',
           'node_modules'
         ],
         alias: {

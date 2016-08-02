@@ -2,11 +2,11 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-  entry: './js/app.js',
+  entry: './src/index.js',
 
   output: {
     path: __dirname,
-    filename: 'bundle.js',
+    filename: 'app.js',
     publicPath: "http://0.0.0.0:8000/",
   },
 
